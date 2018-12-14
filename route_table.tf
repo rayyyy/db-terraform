@@ -8,7 +8,7 @@ resource "aws_route_table" "public-route" {
 }
 
 resource "aws_route_table_association" "puclic-1a" {
-  subnet_id      = "${aws_subnet.private_db1}"
+  subnet_id      = "${aws_subnet.private_db1.id}"
   route_table_id = "${aws_route_table.public-route.id}"
 }
 
