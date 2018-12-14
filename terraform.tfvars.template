@@ -1,0 +1,10 @@
+# templateファイルです。入力したら拡張子の.templateを削除してください。
+# awsの設定
+aws_access_key = "*******************"
+
+aws_secret_key = "*******************"
+
+# mysqlの設定
+username = "*********"
+
+password = "*********"
