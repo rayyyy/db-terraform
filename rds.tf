@@ -14,4 +14,6 @@ resource "aws_db_instance" "db" {
   publicly_accessible     = true
   backup_retention_period = 1
   parameter_group_name    = "${aws_db_parameter_group.tf_pg.name}"
+  vpc_security_group_ids  = ["${aws_security_group.db.id}"]
+  db_subnet_group_name    = "${aws_db_subnet_group.main.name}"
 }
